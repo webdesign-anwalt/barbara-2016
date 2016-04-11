@@ -1,0 +1,117 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+.clear::before, .clear::after, .entry-content::before, .entry-content::after, .comment-content::before, .comment-content::after, .site-header::before, .site-header::after, .site-content::before, .site-content::after, .site-footer::before, .site-footer::after {
+    content: "";
+    display: table;
+}
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+
+input, select {
+    vertical-align:middle;
+}
+
+html, body {height:100%;}
+body {width:100%;font-size:18px; font-family:'droid sans';}
+h1, h2, h3, h4{color:inherit; line-height:1em;}
+h2{font-size:5vw; padding-bottom:15px; margin-top:20px;font-family:oswald;}
+h3{font-size:2vw;padding-bottom:10px;padding-top:15px;}
+p {text-align:justify; line-height:1.5em;}
+
+td{padding:3px 10px;}
+ul {list-style-type:square; font-size:24px; margin-left:24px;line-height:1.5em;}
+ul > ul {margin-left:20px;}
+
+
+/* Farben */
+.dunkel{background: #2F353D; color:white;}
+.mittel{background: #4C5562; color:white;}
+.hell{background: #8797AE;color:black;}
+.hervorgehoben{background: #AE9564;color:white;}
+a {color:inherit;}
+a:hover{color:inherit;}
+
+/* Schriften */
+.lobster{font-family:lobster; font-size:25px;}
+
+.wrapper {margin:0px auto 0px auto; width:80%; padding: 60px 0;}
+.section{margin:0; padding:25px 0;min-height:100%;}
+header {display:block; position:relative;height:100%; width:100%;
+background:url(kanzlei.jpg) no-repeat center center; background-size: cover ;}
+
+.titel{position:absolute;bottom:20px;left:20px;;padding:25px;color:orange;}
+.titel h1{font-family:'oswald'; color:inherit; font-size:8vw;}
+.titel h2{color:inherit;font-family:oswald;font-size:2vw;text-align:right;letter-spacing:1vw;margin-top:0px;}
+/* Navigation */
+nav{position:absolute; top:10px;right:10px;}
+nav li{padding:5px 10px;line-height:1em;}
+nav a{font-size:18px;color:black;letter-spacing:0.2vw;font-familiy:oswald;text-decoration:none;text-align:center;}
+nav img{border-radius:100%;display:block;margin:0 auto 5px auto; auto;width:80px;height:auto; border:2px solid white;}
+nav div{padding:10px;margin-right:5px; width:80px;}
+nav div:hover{background:rgba(0,0,0,0.2);border-radius:3px;color:orange;}
+
+#repertoire {background:url(anwalt-familienrecht.jpg) no-repeat center center; background-size:cover;}
+
+/* Bilder */
+.align-left{padding: 0 15px 15px 0; align:left; width:30%; height:auto; float:left;}
+.align-right{padding: 0 0 15px 15px; align:right; width:45%; height:auto; float:right;}
+#impressum img{width:45%;}
+
+/* Responsive */
+@media (max-width:400px){
+.align-left{padding: 15px 0 ; align:left; width:100%; height:auto; }
+.align-right{padding: 15px 0; align:right; width:100%; height:auto; }
+.handy-hide{display:none;}
+.wrapper{width:90%;}
+#impressum img{width:100%;}
+h3{font-size:18px;}
+h2{font-size:9vw}
+.titel h1{font-size:10vw;}
+.titel h2{font-size:3vw;letter-spacing:0.6vw;}
+nav img{margin:0 auto 5px auto; auto;width:60px;height:auto; border:2px solid white;}
+nav a{font-size:14px;}
+nav{position:absolute;top:10px;left: 0px;}
+nav li{float:none; padding:5px;}
+.head  {position:relative;}
+.head h2{position:absolute;bottom:10px;left:10px;}
+.head img{float:none;}
+}
